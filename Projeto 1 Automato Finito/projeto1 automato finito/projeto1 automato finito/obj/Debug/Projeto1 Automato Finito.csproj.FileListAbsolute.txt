@@ -1,0 +1,10 @@
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\bin\Debug\Projeto1 Automato Finito.exe.config
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\bin\Debug\Projeto1 Automato Finito.exe
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\bin\Debug\Projeto1 Automato Finito.pdb
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1 Automato Finito.csprojResolveAssemblyReference.cache
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1_Automato_Finito.Properties.Resources.resources
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1 Automato Finito.csproj.GenerateResource.Cache
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1 Automato Finito.exe
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1 Automato Finito.pdb
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Views.ViewAutomatoFinito.resources
+C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Views.ViewMain.resources

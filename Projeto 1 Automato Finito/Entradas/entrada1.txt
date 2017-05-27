@@ -1,0 +1,15 @@
+﻿if
+end
+while
+then
+else
+not
+do
+for
+
+<S> ::= a<A> | b<S>
+<A> ::= a<B> | b<A>
+<B> ::= b<B> | ~
+
+<S> ::= a<B> | b<S>
+<B> ::= a<B> | b<B> | ~
