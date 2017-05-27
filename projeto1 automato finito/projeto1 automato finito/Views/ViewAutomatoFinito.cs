@@ -1,7 +1,10 @@
-﻿using Models;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -44,10 +47,21 @@ namespace Views {
         }
 
         private void escreverArquivo(AutomatoFinito automatoFinito) {
-            System.IO.StreamWriter sw = new System.IO.StreamWriter(this.arquivoSaida);
-            sw.Write(System.IO.Path.GetExtension(this.arquivoSaida).Contains("csv") ? automatoFinito.ToCsv(";") : automatoFinito.ToPdf());
-            sw.Close();
-            sw.Dispose();
+            if (Path.GetExtension(this.arquivoSaida).Contains("csv")) {
+                StreamWriter stream = new StreamWriter(this.arquivoSaida);
+                stream.Write(automatoFinito.ToCsv(";"));
+                stream.Close();
+                stream.Dispose();
+            } else {
+                using (FileStream stream = new FileStream(this.arquivoSaida, FileMode.Create)) {
+                    Document pdfDoc = new Document(PageSize.A4);
+                    PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+                    pdfDoc.Add(automatoFinito.ToPdf());
+                    pdfDoc.Close();
+                    stream.Close();
+                }
+            }
             if (MessageBox.Show("Autômato gerado... Deseja abrir o arquivo?", "Concluído", MessageBoxButtons.YesNo) == DialogResult.Yes) {
                 System.Diagnostics.Process.Start(this.arquivoSaida);
             }
@@ -154,7 +168,7 @@ namespace Views {
                     // cria a transição para o novo estado
                     estadoAtual.transicoes.Add(new Transicao(simbolo, estadoNovo));
                     escreveLog(String.Format("{0} por {1} vai para {2}...\r\n", estadoAtual.label, simbolo, estadoNovo.label));
-                    if (!automatoFinito.alfabeto.Contains(simbolo)){
+                    if (!automatoFinito.alfabeto.Contains(simbolo)) {
                         automatoFinito.alfabeto.Add(simbolo);
                     }
                     estadoAtual = estadoNovo;
@@ -248,7 +262,7 @@ namespace Views {
             while (fila.Count > 0) {
                 Estado estadoDesempilhado = fila.Dequeue();
                 foreach (Transicao transicao in estadoDesempilhado.transicoes) {
-                    if(transicao.estadoDestino != null) {
+                    if (transicao.estadoDestino != null) {
                         if (!estadosAlcancados.Contains(transicao.estadoDestino)) {
                             if (transicao.estadoDestino.final) {
                                 return true;
