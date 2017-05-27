@@ -27,7 +27,7 @@ namespace Views {
         }
 
         private void txtArquivoSaida_Click(object sender, EventArgs e) {
-            saveFileDialogSaida.Filter = "CSV|*.csv";
+            saveFileDialogSaida.Filter = "CSV|*.csv|Pdf Files|*.pdf";
             if (this.saveFileDialogSaida.ShowDialog() == DialogResult.OK)
                 this.txtArquivoSaida.Text = this.saveFileDialogSaida.FileName;
         }

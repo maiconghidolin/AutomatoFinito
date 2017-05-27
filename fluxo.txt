@@ -1,8 +1,0 @@
-ler arquivo de entrada
-
-para cada token cria uma 'gramática'
-
-quando ta lendo a gramática, se o estado ja existe cria um novo e coloca no dictionary o mapeamento de qual é e para qual vai
-
-cada estado é representado por um inteiro
-

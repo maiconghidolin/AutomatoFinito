@@ -8,3 +8,15 @@ C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Aut
 C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Projeto1 Automato Finito.pdb
 C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Views.ViewAutomatoFinito.resources
 C:\Users\Maicon\Dropbox\Ciencias da computação\11° Semestre\LFA\Projeto 1 Automato Finito\Projeto1 Automato Finito\Projeto1 Automato Finito\obj\Debug\Views.ViewMain.resources
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\bin\Debug\Projeto1 Automato Finito.exe.config
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Projeto1 Automato Finito.exe
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Projeto1 Automato Finito.pdb
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\bin\Debug\Projeto1 Automato Finito.exe
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\bin\Debug\Projeto1 Automato Finito.pdb
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Projeto1 Automato Finito.csprojResolveAssemblyReference.cache
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Views.ViewAutomatoFinito.resources
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Views.ViewMain.resources
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Projeto1_Automato_Finito.Properties.Resources.resources
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\obj\Debug\Projeto1 Automato Finito.csproj.GenerateResource.Cache
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\bin\Debug\itextsharp.dll
+D:\Projetos\AutomatoFinito\projeto1 automato finito\projeto1 automato finito\bin\Debug\itextsharp.xtra.dll

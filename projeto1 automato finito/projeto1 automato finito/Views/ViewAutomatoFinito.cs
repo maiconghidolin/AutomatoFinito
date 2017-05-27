@@ -22,7 +22,7 @@ namespace Views {
             automatoFinito = determinizarAutomato(automatoFinito);
             removerMortos(automatoFinito);
             escreveLog("AFDM concluído...\r\n");
-            //escreverArquivo(automatoFinito);
+            escreverArquivo(automatoFinito);
         }
 
         private void escreveLog(string mensagem) {
@@ -45,7 +45,7 @@ namespace Views {
 
         private void escreverArquivo(AutomatoFinito automatoFinito) {
             System.IO.StreamWriter sw = new System.IO.StreamWriter(this.arquivoSaida);
-            sw.Write(automatoFinito.ToString(";"));
+            sw.Write(System.IO.Path.GetExtension(this.arquivoSaida).Contains("csv") ? automatoFinito.ToCsv(";") : automatoFinito.ToPdf());
             sw.Close();
             sw.Dispose();
             if (MessageBox.Show("Autômato gerado... Deseja abrir o arquivo?", "Concluído", MessageBoxButtons.YesNo) == DialogResult.Yes) {
@@ -129,6 +129,9 @@ namespace Views {
                         }
                         estadoAtual.transicoes.Add(new Transicao(simbolo, estadoDestino));
                         escreveLog(String.Format("{0} por {1} vai para {2}...\r\n", estadoAtual.label, simbolo, estadoDestino.label.ToString()));
+                        if (!automatoFinito.alfabeto.Contains(simbolo)) {
+                            automatoFinito.alfabeto.Add(simbolo);
+                        }
                     }
                 }
             }
@@ -151,6 +154,9 @@ namespace Views {
                     // cria a transição para o novo estado
                     estadoAtual.transicoes.Add(new Transicao(simbolo, estadoNovo));
                     escreveLog(String.Format("{0} por {1} vai para {2}...\r\n", estadoAtual.label, simbolo, estadoNovo.label));
+                    if (!automatoFinito.alfabeto.Contains(simbolo)){
+                        automatoFinito.alfabeto.Add(simbolo);
+                    }
                     estadoAtual = estadoNovo;
                 }
                 estadoAtual.final = true;
@@ -166,6 +172,7 @@ namespace Views {
             List<Transicao> transicoes = new List<Transicao>();
 
             escreveLog("Iniciando determinização...\r\n");
+            automatoFinitoDeterminizado.alfabeto = automatoFinito.alfabeto;
             estadosPendentes.Add(automatoFinito.estados[0]);
             while (estadosPendentes.Count > 0) {
                 escreveLog("Determinizando transições do estado " + estadosPendentes[0].label + "...\r\n");
